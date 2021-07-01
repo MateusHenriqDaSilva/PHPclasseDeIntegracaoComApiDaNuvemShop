@@ -33,7 +33,7 @@ class NuvemshopProduto
         curl_setopt($curl, CURLOPT_POSTFIELDS,  json_encode($dt));
         curl_setopt($curl, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
-            'Authentication: bearer f1db05fea5a658622d3e0057473d93672f3f0385',
+            'Authentication: bearer token',
             'User-Agent: Awesome App (awesome@app.com)'
         ]);
         $response = curl_exec($curl);
@@ -51,7 +51,7 @@ class NuvemshopProduto
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
-            'Authentication: bearer f1db05fea5a658622d3e0057473d93672f3f0385',
+            'Authentication: bearer token',
             'User-Agent: Awesome App (awesome@app.com)',
             'Accept: */*'
         ]);
